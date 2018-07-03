@@ -1,17 +1,37 @@
 <template>
 
   <div class="w-header">
-    <i class="iconfont icon-soucha"></i>
-    <div class="logo">
-      <img src="../../../../static/imgs/logo.png" alt="">
+    <div class="toclick" @click="toSearch">
+      <i class="iconfont icon-soucha"></i>
     </div>
-    <i class="iconfont icon-ziyuan"></i>
+
+    <div class="logo" @click="goHeader">
+      <img src="/static/imgs/logo.png" alt="">
+    </div>
+    <div class="to" @click="toCars">
+      <i class="iconfont icon-ziyuan"></i>
+    </div>
+
   </div>
 </template>
 
 <script>
     export default {
-        name: "indexHeader"
+        name: "indexHeader",
+        methods:{
+          goHeader(){
+            // console.log(11111111111)
+            this.$router.push({path:'/'})
+          },
+          toSearch(){
+            // console.log(11111111111)
+            this.$router.push({path:'search',name:'search'})
+          },
+          toCars(){
+            // console.log(11111111111)
+            this.$router.push({path:'cars',name:'cars'})
+          }
+        }
     }
 </script>
 
@@ -24,7 +44,6 @@
     align-items: center;
     .iconfont{
       font-size:0.2rem;
-
     }
     .logo img{
       height:0.3rem;

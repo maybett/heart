@@ -8,7 +8,7 @@
         <div class="swiper-slide">c</div>
       </div>
       <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
+      <!--<div class="swiper-pagination"></div>-->
     </div>
   </div>
 
@@ -28,21 +28,21 @@
           autoplay: {
             delay: 3000
           },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            renderBullet: function (index, className) {
-              var text=""
-              switch(index){
-                case 0:text='壹';break;
-                case 1:text='贰';break;
-                case 2:text='叁';break;
-                case 3:text='肆';break;
-                case 4:text='伍';break;
-              }
-              return '<span class="' + className + '">' + text + '</span>';
-            }
-          }
+          // pagination: {
+          //   el: '.swiper-pagination',
+          //   clickable: true,
+          //   renderBullet: function (index, className) {
+          //     var text=""
+          //     switch(index){
+          //       case 0:text='壹';break;
+          //       case 1:text='贰';break;
+          //       case 2:text='叁';break;
+          //       case 3:text='肆';break;
+          //       case 4:text='伍';break;
+          //     }
+          //     return '<span class="' + className + '">' + text + '</span>';
+          //   }
+          // }
         })
       })
     }

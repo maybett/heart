@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-container" id="swiper1">
+  <div class="swiper-container" id="swiper4">
     <div class="swiper-wrapper">
       <div class="swiper-slide swiper1" v-for="p in pic">
         <a href="#">
@@ -9,23 +9,23 @@
 
     </div>
     <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination"  id="swiper4p"></div>
 
   </div>
+
 </template>
 
 <script>
   import Swiper from 'swiper'
-
   export default {
-        name: "headerSwiper",
+        name: "fasionSwiper",
         data(){
           return {
             pic:[
-              {picturl:"./static/imgs/b1.jpg"},
-              {picturl:"./static/imgs/b2.jpg"},
-              {picturl:"./static/imgs/b3.jpg"},
-              {picturl:"./static/imgs/b4.jpg"},
+              {picturl:"./static/imgs/wb1.jpg"},
+              {picturl:"./static/imgs/wb2.jpg"},
+              {picturl:"./static/imgs/wb3.jpg"},
+              {picturl:"./static/imgs/wb4.jpg"},
 
 
             ]
@@ -33,16 +33,17 @@
         },
         mounted(){
           this.$nextTick(() => {
-            new Swiper ('#swiper1',{
+            new Swiper ('#swiper4',{
               direction: "horizontal",
               loop: true,
               autoplay: true,
-              speed: 300,
+              speed: 500,
               autoplay: {
-                delay: 3000
+                delay: 3000,
+                disableOnInteraction: false,
               },
               pagination: {
-                el: ".swiper-pagination",
+                el: "#swiper4p",
                 type: "bullets"
               }
             })
@@ -50,7 +51,6 @@
         }
     }
 </script>
-
 <style lang="scss" scoped>
   .swiper-container {
     width:100%;
@@ -64,7 +64,7 @@
     width:100%;
     height:100%;
   }
-.swiper-container-horizontal > .swiper-pagination-bullets {
+  .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -13px;
     left: 0;
     width: 100%;
@@ -73,3 +73,4 @@
     background:#ff483d;
   }
 </style>
+

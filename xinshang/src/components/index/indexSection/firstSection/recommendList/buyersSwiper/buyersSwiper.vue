@@ -1,18 +1,6 @@
 <template>
   <div class="swiper-container" id="swiper2">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="buyersBox">
-          <a href="#">
-            <img src="/static/imgs/buy1.jpg" alt="">
-          </a>
-
-          <div class="buyersServe">
-            <h1>轻奢品牌</h1>
-          </div>
-        </div>
-
-      </div>
       <!--<div class="swiper-slide swiper1" v-for="p in pic">-->
         <!--<a href="#">-->
           <!--<img :src="p.picturl" alt="">-->
@@ -21,7 +9,7 @@
       <div class="swiper-slide">
         <div class="buyersBox">
           <a href="#">
-            <img src="/static/imgs/buy1.jpg" alt="">
+            <img src="/static/imgs/wbuy1.jpg" alt="">
           </a>
 
           <div class="buyersServe">
@@ -33,7 +21,7 @@
       <div class="swiper-slide">
         <div class="buyersBox">
           <a href="#">
-            <img src="/static/imgs/buy1.jpg" alt="">
+            <img src="/static/imgs/wbuy1.jpg" alt="">
           </a>
 
           <div class="buyersServe">
@@ -42,10 +30,31 @@
         </div>
 
       </div>
+      <div class="swiper-slide">
+        <div class="buyersBox">
+          <a href="#">
+            <img src="/static/imgs/wbuy1.jpg" alt="">
+          </a>
 
+          <div class="buyersServe">
+            <h1>轻奢品牌</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div class="buyersBox">
+          <a href="#">
+            <img src="/static/imgs/wbuy1.jpg" alt="">
+          </a>
+
+          <div class="buyersServe">
+            <h1>轻奢品牌</h1>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-
   </div>
 </template>
 
@@ -56,14 +65,14 @@
         name: "buyersSwiper",
     data(){
       return {
-        pic:[
-          {picturl:"./static/imgs/b1.jpg"},
-          {picturl:"./static/imgs/b2.jpg"},
-          {picturl:"./static/imgs/b3.jpg"},
-          {picturl:"./static/imgs/b4.jpg"},
-
-
-        ]
+        // pic:[
+        //   {picturl:"./static/imgs/wb1.jpg"},
+        //   {picturl:"./static/imgs/wb2.jpg"},
+        //   {picturl:"./static/imgs/wb3.jpg"},
+        //   {picturl:"./static/imgs/wb4.jpg"},
+        //
+        //
+        // ]
       }
     },
     mounted(){
