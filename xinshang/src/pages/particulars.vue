@@ -1,11 +1,11 @@
 <template>
   <div class="part">
-      <particulars-header></particulars-header>
+      <particulars-header ref="header"></particulars-header>
     <div class="section">
-      <particular-banner></particular-banner>
-      <particular-details></particular-details>
+      <particular-banner ref="banner"></particular-banner>
+      <particular-details ref="details"></particular-details>
     </div>
-    <particular-footer></particular-footer>
+    <particular-footer ref="footer"></particular-footer>
   </div>
 
 </template>
@@ -15,9 +15,37 @@
   import ParticularBanner from "../components/particulars/particular-banner/ParticularBanner";
   import ParticularDetails from "../components/particulars/particulars-details/ParticularDetails";
   import ParticularFooter from "../components/particulars/particular-footer/ParticularFooter";
+  import particularApis from '@/apis/tt/getparticular';
     export default {
-        name: "particulars",
-        components: {ParticularFooter, ParticularDetails, ParticularBanner, ParticularsHeader}
+      name: "particulars",
+      data(){
+        return{
+          information:{},
+          id:'',
+        }
+      },
+      //创建实例之后
+      created() {
+        // 通过apis获取真实数据
+        // this.id = this.$route.query.id;
+        this.id = '2078693';
+        particularApis.getGoodsDetail(this.id,(data) => {
+          // console.log(data);
+          this.information = data;
+         // console.log(this.information.data.ownPic);
+         //  传递数据到子页面
+          this.$refs.banner.$emit('pushbanner',this.information);
+          this.$refs.header.$emit('pushheader',this.information);
+          this.$refs.details.$emit('pushdetails',this.information);
+          this.$refs.footer.$emit('pushfooter',this.information);
+
+
+        });
+      },
+      mounted(){
+        var s
+      },
+      components: {ParticularFooter, ParticularDetails, ParticularBanner, ParticularsHeader}
     }
 </script>
 

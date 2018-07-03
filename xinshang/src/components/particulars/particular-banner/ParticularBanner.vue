@@ -3,9 +3,7 @@
     <div class="banner">
       <div class="swiper-container" id="swiper-con">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../../../../static/imgs/tt1.jpg"></div>
-          <div class="swiper-slide"><img src="../../../../static/imgs/tt2.jpg"></div>
-          <div class="swiper-slide"><img src="../../../../static/imgs/tt3.jpg"></div>
+          <div class="swiper-slide" v-for="n in data.banner"><img :src=n.src></div>
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -17,11 +15,11 @@
     </div>
     <!--单品介绍部分-->
     <div class="intr">
-      <h2>CHANEL香奈儿银扣方胖子单肩包</h2>
+      <h2>{{name}}</h2>
       <div class="agt">
         <div class="agt_left">
-          <h2>¥8999</h2>
-          <h3>¥24000</h3>
+          <h2>{{newPrice}}</h2>
+          <h3>{{oldPrice}}</h3>
         </div>
         <div class="agt_right">
           包邮
@@ -40,7 +38,25 @@
   import Swiper from 'swiper'
     export default {
         name: "ParticularBanner",
-        mounted(){
+        data(){
+          return{
+            data:{},
+            name:'',
+            newPrice:'',
+            oldPrice:'',
+          }
+        },
+        created(){
+          this.$on('pushbanner',(data)=>{
+            this.data = data.data;
+             // console.log(this.data);
+             this.name = data.data.name;
+             this.newPrice = data.data.newPrice;
+             // console.log( this.newPrice);
+             this.oldPrice = data.data.oldPrice;
+          })
+        },
+      updated(){
           var mySwiper = new Swiper ('#swiper-con', {
             direction: 'horizontal',
             loop: true,
@@ -60,7 +76,6 @@
     .banner{
       width:100%;
       height:3.65rem;
-      background:red;
       position:relative;
     }
     .swiper-container {
@@ -120,7 +135,6 @@
   }
   .intr{
     width:100%;
-    height:1.2rem;
     /*background:yellow;*/
     border-bottom:2px solid #f2f2f2;
     h2{
@@ -128,6 +142,8 @@
       color:#2b2f2b;
       margin-left:0.2rem;
       margin-top: 0.1rem;
+      padding:0 0.05rem;
+      box-sizing: border-box;
     }
     .agt{
       width:100%;

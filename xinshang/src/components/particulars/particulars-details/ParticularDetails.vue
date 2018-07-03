@@ -5,11 +5,11 @@
        <div class="desc">
           <div class="desc_left">
             <img src="../../../../static/imgs/tt4.jpg">
-            <p>xinshang<br/>-2569324531232</p>
+            <p>{{data.ownName}}</p>
           </div>
           <div class="desc_right">
             <h6>
-              Catier卡地亚豹头系列！高价款！box皮黑金手提包晚宴包，真的美！box皮通病很轻微甲痕！且有且珍惜吧！OL气质妞必入！
+              {{data.describe}}
             </h6>
           </div>
        </div>
@@ -17,16 +17,44 @@
      <div class="seller_details">
        <h2>-&nbsp;商品详情&nbsp;-</h2>
        <ul id="list">
-         <li v-for="n in list">
-           <h3>{{n.pai}}</h3>
-           <h4>{{n.ming}}</h4>
+         <li >
+           <h3>品牌</h3>
+           <h4>{{goodsDetail.brand}}</h4>
+         </li>
+         <li >
+           <h3>品类</h3>
+           <h4>{{goodsDetail.classify}}</h4>
+         </li>
+         <li >
+           <h3>颜色</h3>
+           <h4>{{goodsDetail.color}}</h4>
+         </li>
+         <li >
+           <h3>款式</h3>
+           <h4>{{goodsDetail.style}}</h4>
+         </li>
+         <li >
+           <h3>发源地</h3>
+           <h4>{{goodsDetail.address}}</h4>
+         </li>
+         <li >
+           <h3>成色</h3>
+           <h4>{{goodsDetail.quality}}</h4>
+         </li>
+         <li >
+           <h3>持有配件</h3>
+           <h4>身份证</h4>
+         </li>
+         <li >
+           <h3>商品ID</h3>
+           <h4>{{goodsDetail.goodsId}}</h4>
          </li>
        </ul>
      </div>
      <div class="seller_img">
        <h2>-&nbsp;图文详情&nbsp;-</h2>
        <ul id="lit">
-         <li v-for="p in pics"><img :src="p.picturl"></li>
+         <li v-for="p in data.banner"><img :src="p.src"></li>
        </ul>
      </div>
      <div class="pro">
@@ -75,28 +103,37 @@
         name: "ParticularDetails",
         data(){
           return{
-            list:[{pai:'品牌:',ming:'CHANEL'},
-              {pai:'品类:',ming:'单肩包'},
-              {pai:'持有配件:',ming:'身份卡'},
-              {pai:'颜色:',ming:'如图'},
-              {pai:'款式:',ming:'女士'},
-              {pai:'发源地:',ming:'法国'},
-              {pai:'成色:',ming:'95新'},
-              {pai:'商品ID:',ming:'2077642'},
-            ],
-            pics:[
-              {picturl:'./static/imgs/tt5.jpg'},
-              {picturl:'../../../../static/imgs/tt6.jpg'},
-              {picturl:'../../../../static/imgs/tt7.jpg'},
-              {picturl:'../../../../static/imgs/tt8.jpg'},
-              {picturl:'../../../../static/imgs/tt9.jpg'},
-              {picturl:'../../../../static/imgs/tt10.jpg'},
-              {picturl:'../../../../static/imgs/tt11.jpg'},
-              {picturl:'../../../../static/imgs/tt13.jpg'},
-              {picturl:'../../../../static/imgs/tt12.jpg'}
-            ]
+            // list:[{pai:'品牌:',ming:'CHANEL'},
+            //   {pai:'品类:',ming:'单肩包'},
+            //   {pai:'持有配件:',ming:'身份卡'},
+            //   {pai:'颜色:',ming:'如图'},
+            //   {pai:'款式:',ming:'女士'},
+            //   {pai:'发源地:',ming:'法国'},
+            //   {pai:'成色:',ming:'95新'},
+            //   {pai:'商品ID:',ming:'2077642'},
+            // ],
+            // pics:[
+            //   {picturl:'./static/imgs/tt5.jpg'},
+            //   {picturl:'../../../../static/imgs/tt6.jpg'},
+            //   {picturl:'../../../../static/imgs/tt7.jpg'},
+            //   {picturl:'../../../../static/imgs/tt8.jpg'},
+            //   {picturl:'../../../../static/imgs/tt9.jpg'},
+            //   {picturl:'../../../../static/imgs/tt10.jpg'},
+            //   {picturl:'../../../../static/imgs/tt11.jpg'},
+            //   {picturl:'../../../../static/imgs/tt13.jpg'},
+            //   {picturl:'../../../../static/imgs/tt12.jpg'}
+            // ],
+            data:{},
+            goodsDetail:{}
           }
         },
+      created(){
+        this.$on('pushdetails',(data)=>{
+          // console.log(data);
+          this.data = data.data;
+          this.goodsDetail = data.data.goodsDetail;
+        })
+      },
       mounted(){
           $('.sel li').click(function(){
             $('.sel li').removeClass('sel_active');
@@ -112,7 +149,7 @@
 <style lang="scss" scoped>
   .seller{
     width:100%;
-    height:2.22rem;
+    /*height:2.22rem;*/
     border-bottom: 1px solid #f7f7f7;
     text-align: center;
     padding-top: 0.4rem;
@@ -124,7 +161,7 @@
   }
   .desc{
     width:100%;
-    height:1.45rem;
+    /*height:1.45rem;*/
     display: -webkit-flex;
     padding:0.2rem 0.22rem 0 0.22rem;
     box-sizing: border-box;
@@ -146,7 +183,7 @@
     }
     .desc_right{
       width:2.55rem;
-      height:1.10rem;
+      /*height:1.10rem;*/
       background:#f7f3f7;
       padding:0.14rem 0.1rem 0.14rem 0.1rem;
       box-sizing: border-box;
@@ -162,11 +199,12 @@
   }
   .seller_details{
     width:100%;
-    height:4.3rem;
+    /*height:4.3rem;*/
     border-bottom: 1px solid #f7f7f7;
     text-align: center;
-    padding-top: 0.4rem;
+    /*padding-top: 0.4rem;*/
     box-sizing: border-box;
+    margin-top: 0.6rem;
     h2{
       font-size: 0.16rem;
       color:#212421;
@@ -216,6 +254,7 @@
       width:3.32rem;
       height:3.34rem;
       margin-top: 0.02rem;
+      padding:0 0.05rem;
       img{
         display:block;
         width:3.32rem;

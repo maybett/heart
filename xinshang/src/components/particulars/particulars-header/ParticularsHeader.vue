@@ -1,14 +1,26 @@
 <template>
     <div class="header">
       <i class="iconfont icon-jiantou-copy-copy"></i>
-      <h2>CHANEL香奈儿</h2>
+      <h2>{{data.name}}</h2>
       <h3>...</h3>
     </div>
 </template>
 
 <script>
     export default {
-        name: "ParticularsHeader"
+        name: "ParticularsHeader",
+        data(){
+          return{
+            commodity:'CHANEL香奈儿',
+            data:{}
+          }
+        },
+        created(){
+          this.$on('pushheader',(data)=>{
+            // console.log(data);
+            this.data = data.data;
+          })
+        }
     }
 </script>
 
@@ -30,6 +42,12 @@
         font-size: 0.18rem;
         color:#040504;
         line-height: 0.45rem;
+        width:2.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding:0 0.54rem;
+        box-sizing: border-box;
       }
       h3{
         font-size: 0.18rem;
