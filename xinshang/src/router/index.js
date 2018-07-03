@@ -1,20 +1,36 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import particulars from '@/pages/particulars'
-import cart from'@/pages/cart'
+import classfly from '../pages/classfly'
+import JiaHao from '../pages/JiaHao'
+import JiMai from '../pages/JiMai'
+import FaBu from '../pages/FaBu'
+
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
+
     {
-      path: '/particulars',
-      name: 'particulars',
-      component: particulars
+      path: '/classfly/',
+      name: 'classfly',
+      component: classfly,
     },
     {
-      path: '/cart',
-      name: 'cart',
-      component: cart
+      path: '/JiaHao/',
+      name: 'JiaHao',
+      component: JiaHao,
+    },
+    {
+      path: '/JiMai/',
+      name: 'JiMai',
+      component: JiMai,
+    },
+    {
+      path: '/FaBu/',
+      name: 'FaBu',
+      component: FaBu,
     }
-  ]
+  ],
+
 })
