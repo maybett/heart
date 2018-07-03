@@ -1,14 +1,29 @@
 <template>
   <div class="searchHeader">
     <i class="iconfont icon-jiantou-copy-copy backBtn"></i>
-    <input type="text" class="searchInput" placeholder="搜点什么呢">
-    <p class="searchBtn">搜索</p>
+    <input type="text" v-model="searchKey" @keydown="search" class="searchInput" placeholder="搜点什么呢">
+    <p class="searchBtn" @click="keyCodeOver">搜索</p>
   </div>
 </template>
 
 <script>
   export default {
     name: "searchHeader",
+    data() {
+      return {
+        searchKey:'',
+      }
+    },
+    methods:{
+      search(ev) {
+        if(ev.keyCode == 13) {
+          this.keyCodeOver();
+        }
+      },
+      keyCodeOver() {
+        this.$emit('searchKeyOver',this.searchKey);
+      },
+    },
   }
 </script>
 
