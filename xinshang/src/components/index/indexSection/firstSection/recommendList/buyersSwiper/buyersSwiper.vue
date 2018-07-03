@@ -1,59 +1,19 @@
 <template>
   <div class="swiper-container" id="swiper2">
     <div class="swiper-wrapper">
-      <!--<div class="swiper-slide swiper1" v-for="p in pic">-->
-        <!--<a href="#">-->
-          <!--<img :src="p.picturl" alt="">-->
-        <!--</a>-->
-      <!--</div>-->
-      <div class="swiper-slide">
+      <div class="swiper-slide swiper1" v-for="p in pic">
         <div class="buyersBox">
           <a href="#">
-            <img src="/static/imgs/wbuy1.jpg" alt="">
+            <img :src="p.picturl" alt="">
           </a>
 
           <div class="buyersServe">
-            <h1>轻奢品牌</h1>
+            <h1>{{p.title}}</h1>
           </div>
         </div>
 
       </div>
-      <div class="swiper-slide">
-        <div class="buyersBox">
-          <a href="#">
-            <img src="/static/imgs/wbuy1.jpg" alt="">
-          </a>
 
-          <div class="buyersServe">
-            <h1>轻奢品牌</h1>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-slide">
-        <div class="buyersBox">
-          <a href="#">
-            <img src="/static/imgs/wbuy1.jpg" alt="">
-          </a>
-
-          <div class="buyersServe">
-            <h1>轻奢品牌</h1>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-slide">
-        <div class="buyersBox">
-          <a href="#">
-            <img src="/static/imgs/wbuy1.jpg" alt="">
-          </a>
-
-          <div class="buyersServe">
-            <h1>轻奢品牌</h1>
-          </div>
-        </div>
-
-      </div>
     </div>
   </div>
 </template>
@@ -65,14 +25,12 @@
         name: "buyersSwiper",
     data(){
       return {
-        // pic:[
-        //   {picturl:"./static/imgs/wb1.jpg"},
-        //   {picturl:"./static/imgs/wb2.jpg"},
-        //   {picturl:"./static/imgs/wb3.jpg"},
-        //   {picturl:"./static/imgs/wb4.jpg"},
-        //
-        //
-        // ]
+        pic:[
+          {picturl:"./static/imgs/wp1.jpg",title:'路易·威登'},
+          {picturl:"./static/imgs/wp2.jpg",title:'香奈儿'},
+          {picturl:"./static/imgs/wp3.jpg",title:'博柏利'},
+          {picturl:"./static/imgs/wp4.jpg",title:'卡地亚'},
+        ]
       }
     },
     mounted(){

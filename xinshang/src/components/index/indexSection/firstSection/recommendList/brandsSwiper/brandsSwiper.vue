@@ -6,17 +6,13 @@
           <a href="#">
             <img :src="p.picturl" alt="">
             <div class="brandsServe">
-              <h1>轻奢品牌</h1>
+              <h1>{{p.title}}</h1>
             </div>
           </a>
-
         </div>
-
-
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -27,10 +23,14 @@
     data(){
       return {
         pic:[
-          {picturl:"./static/imgs/wp1.jpg"},
-          {picturl:"./static/imgs/wp2.jpg"},
-          {picturl:"./static/imgs/wp1.jpg"},
-          {picturl:"./static/imgs/wp2.jpg"},
+          {picturl:"./static/imgs/wp1.jpg",title:'路易·威登'},
+          {picturl:"./static/imgs/wp2.jpg",title:'香奈儿'},
+          {picturl:"./static/imgs/wp3.jpg",title:'博柏利'},
+          {picturl:"./static/imgs/wp4.jpg",title:'卡地亚'},
+          {picturl:"./static/imgs/wp5.jpg",title:'迪奥'},
+          {picturl:"./static/imgs/wp6.jpg",title:'普拉达'},
+          {picturl:"./static/imgs/wp7.jpg",title:'施华洛世奇'},
+          {picturl:"./static/imgs/wp8.jpg",title:'欧米茄'},
 
 
         ]

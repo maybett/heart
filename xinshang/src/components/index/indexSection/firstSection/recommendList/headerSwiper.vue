@@ -23,7 +23,7 @@
         data(){
           return {
             indexBannerGoodsList:{},
-            
+
           }
         },
         //获取的动态真实数据data
@@ -67,7 +67,7 @@
   }
   .swiper1 img{
     width:100%;
-    height:100%;
+    height:1.85rem;
   }
 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -13px;

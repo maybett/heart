@@ -58,7 +58,7 @@
     methods:{
       goParticular(index){
         // console.log(index)
-        console.log(this.indexGoodsList[index].goodsId)
+        // console.log(this.indexGoodsList[index].goodsId)
         this.$router.push({path:'/particulars',name:'particulars',query:{id:this.indexGoodsList[index].goodsId}})
       }
     },
