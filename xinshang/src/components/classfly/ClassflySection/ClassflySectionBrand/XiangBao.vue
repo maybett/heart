@@ -4,53 +4,53 @@
     <h3>一一 箱包分类 一一</h3>
   </div>
   <div class="section">
-      <div>
+      <div   @click="goSearch">
         <img src="../../../../../static/imgs/hk1.jpg">
         <p>手提包</p>
       </div>
-      <div>
+      <div   @click="goSearch">
         <img src="../../../../../static/imgs/hk2.jpg">
         <p>双肩包</p>
       </div>
-      <div>
+      <div   @click="goSearch">
         <img src="../../../../../static/imgs/hk3.jpg">
         <p>单肩包</p>
       </div>
   </div>
   <div class="section">
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk4.jpg">
       <p>公文包</p>
     </div>
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk5.jpg">
       <p>化妆包</p>
     </div>
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk6.jpg">
       <p>手机套</p>
     </div>
   </div>
   <div class="section">
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk7.jpg">
       <p>胸包</p>
     </div>
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk8.jpg">
       <p>卡套</p>
     </div>
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk9.jpg">
       <p>手拿包</p>
     </div>
   </div>
   <div class="section1">
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk10.jpg">
       <p>行李箱</p>
     </div>
-    <div>
+    <div   @click="goSearch">
       <img src="../../../../../static/imgs/hk11.jpg">
       <p>钱包</p>
     </div>
@@ -62,6 +62,11 @@
   // import classfly from '@/apis/HouKun/classfly.js'
     export default {
         name: "XiangBao",
+      methods:{
+        goSearch(){
+          this.$router.push({path:'/search'})
+        },
+      }
       // data() {
       //     return{
       //       list:[],

@@ -1,5 +1,6 @@
 <template>
 <div class="jiahao">
+  <a href="#" class="ac"  @click="goClassfly">×</a>
   <div class="top">
     <h3>闲置宝贝卖个人</h3>
     <p>闲置7天出售，15天未出售高价回收</p>
@@ -64,6 +65,9 @@
         goFaBu(){
           this.$router.push({path:'/FaBu'})
         },
+        goClassfly(){
+          this.$router.push({path:'/classfly'})
+        },
       }
     }
 </script>
@@ -87,9 +91,15 @@
     flex-direction: column;
     justify-content: center;
   }
+ .ac{
+    font-size: 20px;
+    color: darksalmon;
+    margin-left: 0.1rem;
+  }
 .top h3{
   font-size: 18px;
   margin-left: 0.1rem;
+
 }
   .top p{
     color: #767676;
