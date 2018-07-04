@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-<<<<<<< HEAD
 import particulars from '@/pages/particulars'
 import cart from'@/pages/cart'
 import index from '@/pages/index'
@@ -10,14 +9,13 @@ import watch from '../components/index/indexSection/firstSection/watch'
 import clothing from '../components/index/indexSection/firstSection/clothing'
 import acces from '../components/index/indexSection/firstSection/acces'
 import jewelry from '../components/index/indexSection/firstSection/jewelry'
-=======
 import classfly from '../pages/classfly'
 import JiaHao from '../pages/JiaHao'
 import JiMai from '../pages/JiMai'
 import FaBu from '../pages/FaBu'
 import lv from '../pages/lv'
->>>>>>> hk
-
+import Search from '@/components/public/search/search'
+import Order from '@/pages/order'
 
 Vue.use(Router)
 
@@ -48,8 +46,17 @@ export default new Router({
       path: '/lv/',
       name: 'lv',
       component: lv,
+    },
+    {
+      path:'/search',
+      name:'search',
+      component:Search
+    },
+    {
+      path:'/order',
+      name:'order',
+      component:Order
     }
-<<<<<<< HEAD
       path: '/',
       name: 'index',
       component: index,
@@ -94,8 +101,6 @@ export default new Router({
     },
 
   ]
-=======
   ],
 
->>>>>>> hk
 })
