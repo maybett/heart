@@ -22,10 +22,10 @@
         data(){
           return {
             pic:[
-              {picturl:"./static/imgs/wb1.jpg"},
-              {picturl:"./static/imgs/wb2.jpg"},
-              {picturl:"./static/imgs/wb3.jpg"},
-              {picturl:"./static/imgs/wb4.jpg"},
+              {picturl:"./static/imgs/wf1.png"},
+              {picturl:"./static/imgs/wf2.png"},
+              {picturl:"./static/imgs/wf3.png"},
+              {picturl:"./static/imgs/wf4.png"},
 
 
             ]

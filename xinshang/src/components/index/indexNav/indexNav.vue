@@ -98,10 +98,10 @@
     font-size:0.14rem;
     flex-shrink: 0;
   }
-  .boxSection .bs{
-    display:none;
-  }
-  .boxSection .active{
-    display:block;
-  }
+  /*.boxSection .bs{*/
+    /*display:none;*/
+  /*}*/
+  /*.boxSection .active{*/
+    /*display:block;*/
+  /*}*/
 </style>

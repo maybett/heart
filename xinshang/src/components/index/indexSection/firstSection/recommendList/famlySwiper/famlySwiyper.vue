@@ -6,8 +6,8 @@
           <img :src="p.picturl" alt="">
           <dl class="famlySwiperMini">
             <dd>私物分享</dd>
-            <dt>第一只大牌包</dt>
-            <dt>富有层次和质感的菱格纹设计，皮革穿插链条的迷人肩带，足以让无数少女为之心动。</dt>
+            <dt>{{p.title}}</dt>
+            <dt>{{p.detai}}</dt>
           </dl>
         </a>
       </div>
@@ -27,10 +27,10 @@
       data(){
         return {
           pic:[
-            {picturl:"./static/imgs/wb1.jpg"},
-            {picturl:"./static/imgs/wb2.jpg"},
-            {picturl:"./static/imgs/wb3.jpg"},
-            {picturl:"./static/imgs/wb4.jpg"},
+            {picturl:"./static/imgs/wfa1.png",title:"第一只大牌香水",detai:"富有层次和质感的菱格纹设计，皮革穿插链条的迷人肩带，足以让无数少女为之心动"},
+            {picturl:"./static/imgs/wfa2.png",title:"第一只大牌服装",detai:"富有层次和质感的菱格纹设计，皮革穿插链条的迷人肩带，足以让无数少女为之心动"},
+            {picturl:"./static/imgs/wfa3.png",title:"第一只大牌手表",detai:"富有层次和质感的菱格纹设计，皮革穿插链条的迷人肩带，足以让无数少女为之心动"},
+            {picturl:"./static/imgs/wfa4.png",title:"第一只大牌颜霜",detai:"富有层次和质感的菱格纹设计，皮革穿插链条的迷人肩带，足以让无数少女为之心动"},
           ]
         }
       },

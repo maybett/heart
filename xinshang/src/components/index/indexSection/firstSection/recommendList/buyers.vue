@@ -11,47 +11,17 @@
           </div>
         </div>
         <div class="buyersList">
-          <div class="buyersListMini">
+          <div class="buyersListMini" v-for="buyers in buyersList">
             <div class="buyersListMiniT">
-              <h1>全新闲置</h1>
-              <p>买到就是赚到</p>
+              <h1>{{buyers.title}}</h1>
+              <p>{{buyers.miniTitle}}</p>
             </div>
             <div class="buyersListMiniB">
               <i class="iconfont icon-arrow-right"></i>
-              <a href=""><img src="/static/imgs/wt1.jpg" alt=""></a>
+              <a href=""><img :src="buyers.picturl" alt=""></a>
             </div>
           </div>
-          <div class="buyersListMini">
-            <div class="buyersListMiniT">
-              <h1>全新闲置</h1>
-              <p>买到就是赚到</p>
 
-            </div>
-            <div class="buyersListMiniB">
-              <i class="iconfont icon-arrow-right"></i>
-              <a href=""><img src="/static/imgs/wt1.jpg" alt=""></a>
-            </div>
-          </div>
-          <div class="buyersListMini">
-            <div class="buyersListMiniT">
-              <h1>全新闲置</h1>
-              <p>买到就是赚到</p>
-            </div>
-            <div class="buyersListMiniB">
-              <i class="iconfont icon-arrow-right"></i>
-              <a href=""><img src="/static/imgs/wt1.jpg" alt=""></a>
-            </div>
-          </div>
-          <div class="buyersListMini">
-            <div class="buyersListMiniT">
-              <h1>全新闲置</h1>
-              <p>买到就是赚到</p>
-            </div>
-            <div class="buyersListMiniB">
-              <i class="iconfont icon-arrow-right"></i>
-              <a href=""><img src="/static/imgs/wt1.jpg" alt=""></a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -64,13 +34,26 @@
         name: "buyers",
     components: {
       buyersSwiper
+    },
+    data(){
+          return{
+            buyersList:[
+              {picturl:"./static/imgs/wu1.png",title:'全新闲置',miniTitle:'买到就是赚到'},
+              {picturl:"./static/imgs/wu2.png",title:'一折起售',miniTitle:'超低折扣捡漏'},
+              {picturl:"./static/imgs/wu3.png",title:'心上直邮',miniTitle:'24小时极速发货'},
+              {picturl:"./static/imgs/wu4.png",title:'最新上架',miniTitle:'24小时实时更新'}
+
+            ]
+
+          }
     }
+
     }
 </script>
 
 <style lang="scss" scoped>
   .buyers{
-    padding:0.15rem 0.1rem ;
+    padding:0 0.1rem 0.15rem ;
     display:flex;
     flex-direction: column;
 
@@ -107,10 +90,10 @@
 
 }
   .buyersListMiniT{
-
+    margin-bottom: 0.2rem;
     border-sizing:border-box;
     h1{
-      font-size:0.18rem;
+      font-size:0.14rem;
       color:#353a35;
       padding:0.05rem 0;
     }
@@ -123,13 +106,14 @@
   .buyersListMiniB{
     display:flex;
     justify-content: space-between;
-    align-items:center ;
+    align-items:baseline;
     .iconfont{
       font-size:0.2rem;
       color:#a7a5a7;
     }
     img{
-      width:100%;
+      width:0.6rem;
+      height:0.6rem;
 
     }
 

@@ -31,7 +31,7 @@
 
 <style lang="scss" scoped>
   .brands{
-    padding:0.15rem 0.1rem ;
+    padding:0 0.1rem 0.15rem ;
     display:flex;
     flex-direction: column;
 
