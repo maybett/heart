@@ -7,9 +7,9 @@
             <img :src="p.picturl" alt="">
           </a>
 
-          <div class="buyersServe">
-            <h1>{{p.title}}</h1>
-          </div>
+          <!--<div class="buyersServe">-->
+            <!--<h1>{{p.title}}</h1>-->
+          <!--</div>-->
         </div>
 
       </div>
@@ -26,10 +26,10 @@
     data(){
       return {
         pic:[
-          {picturl:"./static/imgs/wp1.jpg",title:'路易·威登'},
-          {picturl:"./static/imgs/wp2.jpg",title:'香奈儿'},
-          {picturl:"./static/imgs/wp3.jpg",title:'博柏利'},
-          {picturl:"./static/imgs/wp4.jpg",title:'卡地亚'},
+          {picturl:"./static/imgs/ws1.png"},
+          {picturl:"./static/imgs/ws2.png"},
+          {picturl:"./static/imgs/ws3.jpg"},
+          {picturl:"./static/imgs/ws4.png"}
         ]
       }
     },
