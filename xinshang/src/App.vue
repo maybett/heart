@@ -13,7 +13,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
 #app {
   width:100%;
   height:100%;
@@ -21,11 +20,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-=======
 #app{
   width: 100%;
   height: 100%;
->>>>>>> hk
 }
 
 </style>
