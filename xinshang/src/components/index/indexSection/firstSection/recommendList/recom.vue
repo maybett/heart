@@ -2,11 +2,11 @@
   <div class="recom">
     <div class="recomTitle">
       <h1>— 猜你喜欢 —</h1>
-      <h3>recom</h3>
+      <h3>RECOM</h3>
     </div>
     <div class="recomContent">
       <div class="recomContentMini" v-for="(b,index) in indexGoodsList" @click="goParticular(index)">
-        <a href="">
+        <!--<a href="">-->
           <div class="recomContentImg">
             <img :src="b.goodsThumb" alt="">
           </div>
@@ -22,7 +22,7 @@
 
             </p>
           </div>
-        </a>
+        <!--</a>-->
       </div>
     </div>
   </div>
