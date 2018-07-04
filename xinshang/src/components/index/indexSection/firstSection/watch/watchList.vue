@@ -30,9 +30,15 @@
         or_show:false,
         watchL:[
           {watchImg:"./static/imgs/wwat1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:8888,oldPrice:10000},
-          {watchImg:"./static/imgs/wwat2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
-          {watchImg:"./static/imgs/wwat3.jpg",news:'【9成新】',title:'LONGINES',newPrice:7867,oldPrice:9888},
-          {watchImg:"./static/imgs/wwat4.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {watchImg:"./static/imgs/wwat2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9000},
+          {watchImg:"./static/imgs/wwat3.jpg",news:'【9成新】',title:'LONGINES',newPrice:6000,oldPrice:8000},
+          {watchImg:"./static/imgs/wwat4.jpg",news:'【9成新】',title:'Cartier',newPrice:5000,oldPrice:7658},
+          {watchImg:"./static/imgs/wwat5.jpg",news:'【9成新】',title:'Breguet',newPrice:6550,oldPrice:6588},
+          {watchImg:"./static/imgs/wwat6.jpg",news:'【9成新】',title:'Rolex',newPrice:6800,oldPrice:9900},
+          {watchImg:"./static/imgs/wwat7.jpg",news:'【9成新】',title:'Breguet',newPrice:6000,oldPrice:8588},
+          {watchImg:"./static/imgs/wwat8.jpg",news:'【9成新】',title:'Cartier',newPrice:5000,oldPrice:6588},
+          {watchImg:"./static/imgs/wwat9.jpg",news:'【9成新】',title:'ZENITH',newPrice:3000,oldPrice:7655},
+          {watchImg:"./static/imgs/wwat10.jpg",news:'【9成新】',title:'Rolex',newPrice:16800,oldPrice:39988},
 
         ]
       }

@@ -56,7 +56,8 @@ export default new Router({
       path:'/order',
       name:'order',
       component:Order
-    }
+    },
+    {
       path: '/',
       name: 'index',
       component: index,
@@ -100,7 +101,7 @@ export default new Router({
       ],
     },
 
-  ]
+
   ],
 
 })

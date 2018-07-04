@@ -1,7 +1,6 @@
 <template>
     <div class="bagList">
       <div class="bagListmini" v-for="b in bList">
-        <a href="">
           <div class="bagListminiImg">
             <img :src="b.bagImg" alt="">
           </div>
@@ -14,7 +13,6 @@
             <span class="s4">￥{{b.oldPrice}}</span>
           </p>
           <i class="iconfont icon-xin-copy"></i>
-        </a>
       </div>
 
     </div>
@@ -25,10 +23,18 @@
       data(){
         return{
           bList:[
-            {bagImg:"./static/imgs/wbag1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:8888,oldPrice:10000},
-            {bagImg:"./static/imgs/wbag2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
-            {bagImg:"./static/imgs/wbag1.jpg",news:'【9成新】',title:'LONGINES',newPrice:7867,oldPrice:9888},
-            {bagImg:"./static/imgs/wbag1.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+            {bagImg:"./static/imgs/wxb1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:4633,oldPrice:7688},
+            {bagImg:"./static/imgs/wxb2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
+            {bagImg:"./static/imgs/wxb3.jpg",news:'【9成新】',title:'LONGINES',newPrice:2867,oldPrice:3888},
+            {bagImg:"./static/imgs/wxb4.jpg",news:'【8成新】',title:'Louis Vuitton',newPrice:3800,oldPrice:4988},
+            {bagImg:"./static/imgs/wxb5.jpg",news:'【9成新】',title:'FENDI',newPrice:2600,oldPrice:4288},
+            {bagImg:"./static/imgs/wxb6.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:3800,oldPrice:4988},
+            {bagImg:"./static/imgs/wxb7.jpg",news:'【7成新】',title:'MCM ',newPrice:6800,oldPrice:8888},
+            {bagImg:"./static/imgs/wxb8.jpg",news:'【8成新】',title:'COACH',newPrice:2500,oldPrice:8988},
+            {bagImg:"./static/imgs/wxb9.jpg",news:'【9成新】',title:'Moschino ',newPrice:1300,oldPrice:5908},
+            {bagImg:"./static/imgs/wxb10.jpg",news:'【9成新】',title:'Dior',newPrice:2380,oldPrice:4888},
+            {bagImg:"./static/imgs/wxb11.jpg",news:'【9成新】',title:'Cartier',newPrice:5368,oldPrice:9988},
+            {bagImg:"./static/imgs/wxb12.jpg",news:'【9成新】',title:'Hermès',newPrice:5800,oldPrice:18988},
 
           ]
         }
@@ -64,6 +70,7 @@
     .p1 {
       display:flex;
 
+      padding:0.2rem 0 0;
       .s1 {
         font-size:0.12rem;
         color:#252825;

@@ -15,37 +15,44 @@
 </template>
 
 <script>
-  // import Swiper from 'swiper'
+  import Swiper from 'swiper'
   export default {
     name: "accesSwiper",
     data(){
       return {
         pic:[
-          {picturl:"./static/imgs/wws1.jpg"},
-          {picturl:"./static/imgs/wb2.jpg"},
-          {picturl:"./static/imgs/wb3.jpg"},
-          {picturl:"./static/imgs/wb4.jpg"},
-
+          {picturl:"./static/imgs/wac1.jpg"},
+          {picturl:"./static/imgs/wb9.jpg"},
+          {picturl:"./static/imgs/wac1.jpg"},
+          {picturl:"./static/imgs/wac1.jpg"}
 
         ]
       }
     },
-    updated(){
-      this.$nextTick(() => {
-        new Swiper ('#swiper9',{
-          direction: "horizontal",
-          loop: true,
-          autoplay: true,
-          speed: 300,
-          autoplay: {
-            delay: 3000
-          },
-          pagination: {
-            el: "#swiper9p",
-            type: "bullets"
-          }
+    methods:{
+      createSwiper() {
+        this.$nextTick(() => {
+          new Swiper ('#swiper9',{
+            direction: "horizontal",
+            loop: true,
+            autoplay: true,
+            speed: 300,
+            autoplay: {
+              delay: 3000
+            },
+            pagination: {
+              el: "#swiper9p",
+              type: "bullets"
+            }
+          })
         })
-      })
+      },
+    },
+    mounted() {
+      this.createSwiper();
+    },
+    updated(){
+      this.createSwiper();
     }
   }
 </script>

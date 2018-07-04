@@ -25,10 +25,16 @@
     data(){
       return{
         bList:[
-          {accesImg:"./static/imgs/wwat1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:8888,oldPrice:10000},
-          {accesImg:"./static/imgs/wwat2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
-          {accesImg:"./static/imgs/wwat3.jpg",news:'【9成新】',title:'LONGINES',newPrice:7867,oldPrice:9888},
-          {accesImg:"./static/imgs/wwat3.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {accesImg:"./static/imgs/wac1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:8888,oldPrice:10000},
+          {accesImg:"./static/imgs/wac2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
+          {accesImg:"./static/imgs/wac3.jpg",news:'【9成新】',title:'LONGINES',newPrice:7867,oldPrice:9888},
+          {accesImg:"./static/imgs/wac4.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {accesImg:"./static/imgs/wac5.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {accesImg:"./static/imgs/wac6.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {accesImg:"./static/imgs/wac7.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {accesImg:"./static/imgs/wac8.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {accesImg:"./static/imgs/wac9.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {accesImg:"./static/imgs/wac10.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
 
         ]
       }

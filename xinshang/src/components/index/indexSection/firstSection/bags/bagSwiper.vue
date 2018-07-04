@@ -20,9 +20,10 @@
       data(){
         return {
           pic:[
-            {picturl:"./static/imgs/wb2.jpg"},
-            {picturl:"./static/imgs/wb3.jpg"},
-            {picturl:"./static/imgs/wb4.jpg"}
+            {picturl:"./static/imgs/wb8.jpg"},
+            {picturl:"./static/imgs/wb9.jpg"},
+            {picturl:"./static/imgs/wb6.jpg"},
+            {picturl:"./static/imgs/wb5.jpg"}
           ]
         }
       },

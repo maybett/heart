@@ -25,10 +25,10 @@
     data(){
       return{
         bList:[
-          {bagImg:"./static/imgs/wbag1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:8888,oldPrice:10000},
-          {bagImg:"./static/imgs/wbag2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
-          {bagImg:"./static/imgs/wbag1.jpg",news:'【9成新】',title:'LONGINES',newPrice:7867,oldPrice:9888},
-          {bagImg:"./static/imgs/wbag1.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {bagImg:"./static/imgs/wac1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:8888,oldPrice:10000},
+          {bagImg:"./static/imgs/wac2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
+          {bagImg:"./static/imgs/wac3.jpg",news:'【9成新】',title:'LONGINES',newPrice:7867,oldPrice:9888},
+          {bagImg:"./static/imgs/wac4.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
 
         ]
       }

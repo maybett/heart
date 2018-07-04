@@ -1,7 +1,6 @@
 <template>
   <div class="clothingList">
     <div class="clothingMini" v-for="wList in clothingL">
-      <a href="">
         <div class="clothingMiniImg">
           <img :src="wList.clothingImg" alt="">
         </div>
@@ -13,7 +12,6 @@
           <span class="s3">￥{{wList.newPrice}}</span>
           <span class="s4">￥{{wList.oldPrice}}</span>
         </p>
-      </a>
       <i class="iconfont icon-xin-copy" @touchstart="touch"></i>
       <div class="redheart" v-show="or_show">
         <i class="iconfont icon-xin"></i>
@@ -32,10 +30,16 @@
       return{
         or_show:false,
         clothingL:[
-          {clothingImg:"./static/imgs/wwat1.jpg",news:'【9成新】',title:'Louis Vuitton',newPrice:8888,oldPrice:10000},
-          {clothingImg:"./static/imgs/wwat2.jpg",news:'【8成新】',title:'ZENITH',newPrice:6888,oldPrice:9988},
-          {clothingImg:"./static/imgs/wwat3.jpg",news:'【9成新】',title:'LONGINES',newPrice:7867,oldPrice:9888},
-          {clothingImg:"./static/imgs/wwat4.jpg",news:'【9成新】',title:'ZENITH',newPrice:6800,oldPrice:9988},
+          {clothingImg:"./static/imgs/wvb1.jpg",news:'【9成新】',title:'J.Crew',newPrice:1288,oldPrice:5000},
+          {clothingImg:"./static/imgs/wvb2.jpg",news:'【8成新】',title:'Vince',newPrice:388,oldPrice:988},
+          {clothingImg:"./static/imgs/wvb3.jpg",news:'【全新】',title:'J.Crew',newPrice:867,oldPrice:1588},
+          {clothingImg:"./static/imgs/wvb4.jpg",news:'【全新】',title:'Under Armour',newPrice:567,oldPrice:1254},
+          {clothingImg:"./static/imgs/wvb5.jpg",news:'【全新】',title:'J.Crew',newPrice:1265,oldPrice:6500},
+          {clothingImg:"./static/imgs/wvb6.jpg",news:'【9成新】',title:'Vince',newPrice:1200,oldPrice:2300},
+          {clothingImg:"./static/imgs/wvb7.jpg",news:'【全新】',title:'Under Armour',newPrice:988,oldPrice:1100},
+          {clothingImg:"./static/imgs/wvb8.jpg",news:'【全新】',title:'J.Crew',newPrice:500,oldPrice:888},
+          {clothingImg:"./static/imgs/wvb9.jpg",news:'【9成新】',title:'Under Armour',newPrice:888,oldPrice:1500},
+          {clothingImg:"./static/imgs/wvb10.jpg",news:'【全新】',title:'Vince',newPrice:590,oldPrice:1300},
 
         ]
       }
