@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+<<<<<<< HEAD
 import particulars from '@/pages/particulars'
 import cart from'@/pages/cart'
 import index from '@/pages/index'
@@ -9,22 +10,46 @@ import watch from '../components/index/indexSection/firstSection/watch'
 import clothing from '../components/index/indexSection/firstSection/clothing'
 import acces from '../components/index/indexSection/firstSection/acces'
 import jewelry from '../components/index/indexSection/firstSection/jewelry'
+=======
+import classfly from '../pages/classfly'
+import JiaHao from '../pages/JiaHao'
+import JiMai from '../pages/JiMai'
+import FaBu from '../pages/FaBu'
+import lv from '../pages/lv'
+>>>>>>> hk
 
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+
     {
-      path: '/particulars',
-      name: 'particulars',
-      component: particulars
+      path: '/classfly/',
+      name: 'classfly',
+      component: classfly,
     },
     {
-      path: '/cart',
-      name: 'cart',
-      component: cart
+      path: '/JiaHao/',
+      name: 'JiaHao',
+      component: JiaHao,
+    },
+    {
+      path: '/JiMai/',
+      name: 'JiMai',
+      component: JiMai,
+    },
+    {
+      path: '/FaBu/',
+      name: 'FaBu',
+      component: FaBu,
+    },
+    {
+      path: '/lv/',
+      name: 'lv',
+      component: lv,
     }
+<<<<<<< HEAD
       path: '/',
       name: 'index',
       component: index,
@@ -69,4 +94,8 @@ export default new Router({
     },
 
   ]
+=======
+  ],
+
+>>>>>>> hk
 })

@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">-->
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {}
 }
 </script>
 
 <style>
+<<<<<<< HEAD
 #app {
   width:100%;
   height:100%;
@@ -19,5 +21,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+=======
+#app{
+  width: 100%;
+  height: 100%;
+>>>>>>> hk
 }
+
 </style>
