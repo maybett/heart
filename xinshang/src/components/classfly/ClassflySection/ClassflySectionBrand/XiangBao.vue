@@ -59,20 +59,20 @@
 </template>
 
 <script>
-  import classfly from '@/apis/HouKun/classfly.js'
+  // import classfly from '@/apis/HouKun/classfly.js'
     export default {
         name: "XiangBao",
-      data() {
-          return{
-            list:[],
-          }
-      },
-      beforeCreate() {
-        classfly.getBrandList((data) => {
-            this.list.push(data.data.shift());
-        });
-
-      },
+      // data() {
+      //     return{
+      //       list:[],
+      //     }
+      // },
+      // beforeCreate() {
+      //   classfly.getBrandList((data) => {
+      //       this.list.push(data.data.shift());
+      //   });
+      //
+      // },
     }
 </script>
 

@@ -4,6 +4,7 @@ import classfly from '../pages/classfly'
 import JiaHao from '../pages/JiaHao'
 import JiMai from '../pages/JiMai'
 import FaBu from '../pages/FaBu'
+import lv from '../pages/lv'
 
 
 Vue.use(Router)
@@ -30,6 +31,11 @@ export default new Router({
       path: '/FaBu/',
       name: 'FaBu',
       component: FaBu,
+    },
+    {
+      path: '/lv/',
+      name: 'lv',
+      component: lv,
     }
   ],
 

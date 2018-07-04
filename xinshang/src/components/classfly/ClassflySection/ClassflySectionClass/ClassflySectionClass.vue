@@ -3,7 +3,7 @@
   <div class="chaoliu">
     <h3>潮流大牌</h3>
   </div>
-  <div class="lv">
+  <div class="lv" @click="goLv">
       <div>
         <h3>LV</h3>
         <p>路易·威登</p>
@@ -798,6 +798,12 @@
 
   export default {
     name: "classify-section",
+    methods:{
+      goLv(){
+        this.$router.push({path:'/lv'})
+      },
+
+    },
     components:{ },
   }
 
