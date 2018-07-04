@@ -32,6 +32,7 @@
         },
         choseAddressOver(data) {
           this.addressMsg = data;
+          this.isShowAddress = false;
         },
       },
       created() {
@@ -60,7 +61,7 @@
         //     },
         //   ];
         // 从localstorage中获取数据
-        var goodsList = localStorage.getItem('shopGoodsList');
+        var goodsList = localStorage.getItem('goodsList');
         if(!goodsList) {
           this.goodsList = [];
         }else{

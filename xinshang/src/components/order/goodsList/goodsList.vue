@@ -9,7 +9,7 @@
         </div>
         <div class="goodsDetail">
           <div class="left">
-            <img class="goodsPic" :src="i.goodsPic" alt="">
+            <img class="goodsPic" :src="i.bigPic" alt="">
           </div>
           <div class="right">
             <p class="goodsName">{{i.name}}</p>

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8f96a53-e69d-4871-9208-73741944955a" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/xinshang/src/components/public/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/src/components/public/search/search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xinshang/src/components/public/search/searchFilter/searchFilter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/src/components/public/search/searchFilter/searchFilter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xinshang/src/components/public/search/searchFilter/searchFilterItems/sort.vue" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/src/components/public/search/searchFilter/searchFilterItems/sort.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xinshang/src/components/public/search/srarchHeader/searchHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/src/components/public/search/srarchHeader/searchHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xinshang/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xinshang/srcProjectPicScreenshot_20180628-203811.png" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/srcProjectPicScreenshot_20180628-203811.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinshang/src/components/order/goodsList/goodsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/src/components/order/goodsList/goodsList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinshang/src/pages/order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/xinshang/src/pages/order.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="order.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xinshang/src/pages/order.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            <state relative-caret-position="225">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -42,7 +38,7 @@
       <file leaf-file-name="searchCon.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xinshang/src/components/public/search/searchCon/searchCon.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="25">
               <caret line="93" column="77" selection-start-line="93" selection-start-column="77" selection-end-line="93" selection-end-column="77" />
             </state>
           </provider>
@@ -51,7 +47,7 @@
       <file leaf-file-name="choseAddress.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/choseAddress/choseAddress.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="650">
               <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
             </state>
           </provider>
@@ -60,8 +56,8 @@
       <file leaf-file-name="addAddress.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/addAddress/addAddress.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1975">
-              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+            <state relative-caret-position="250">
+              <caret line="82" column="38" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -75,11 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderApis.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="orderApis.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xinshang/src/apis/order/orderApis.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
               <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goodsList.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/goodsList/goodsList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -126,10 +131,11 @@
         <option value="$PROJECT_DIR$/xinshang/src/components/order/addAddress/addProv/addProv.vue" />
         <option value="$PROJECT_DIR$/xinshang/src/components/order/addAddress/addAddress.vue" />
         <option value="$PROJECT_DIR$/xinshang/src/components/order/choseAddress/choseAddress.vue" />
-        <option value="$PROJECT_DIR$/xinshang/src/pages/order.vue" />
         <option value="$PROJECT_DIR$/xinshang/src/components/order/orderHeader/orderHeader.vue" />
         <option value="$PROJECT_DIR$/xinshang/src/components/public/search/searchCon/searchCon.vue" />
         <option value="$PROJECT_DIR$/xinshang/src/apis/order/orderApis.js" />
+        <option value="$PROJECT_DIR$/xinshang/src/components/order/goodsList/goodsList.vue" />
+        <option value="$PROJECT_DIR$/xinshang/src/pages/order.vue" />
       </list>
     </option>
   </component>
@@ -193,7 +199,14 @@
               <item name="heart" type="462c0819:PsiDirectoryNode" />
               <item name="xinshang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="apis" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="heart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heart" type="462c0819:PsiDirectoryNode" />
+              <item name="xinshang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,6 +215,8 @@
               <item name="xinshang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="addAddress" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="heart" type="b2602c69:ProjectViewProjectNode" />
@@ -209,57 +224,8 @@
               <item name="xinshang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heart" type="462c0819:PsiDirectoryNode" />
-              <item name="xinshang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heart" type="462c0819:PsiDirectoryNode" />
-              <item name="xinshang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="searchCon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heart" type="462c0819:PsiDirectoryNode" />
-              <item name="xinshang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="searchFilter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heart" type="462c0819:PsiDirectoryNode" />
-              <item name="xinshang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="searchFilter" type="462c0819:PsiDirectoryNode" />
-              <item name="searchFilterItems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="heart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="heart" type="462c0819:PsiDirectoryNode" />
-              <item name="xinshang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="srarchHeader" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="choseAddress" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="heart" type="b2602c69:ProjectViewProjectNode" />
@@ -343,11 +309,12 @@
       <workItem from="1530410171119" duration="19924000" />
       <workItem from="1530579907505" duration="11593000" />
       <workItem from="1530611074647" duration="3144000" />
+      <workItem from="1530689702664" duration="636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75153000" />
+    <option name="totallyTimeSpent" value="75789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
@@ -363,7 +330,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.3298611" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32947233" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32947233" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,13 +354,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xinshang/src/components/public/search/searchFilter/searchFilterItems/classify.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xinshang/src/components/public/search/searchFilter/searchFilterItems/brand.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
@@ -655,38 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/addAddress/addAddress.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1975">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/choseAddress/choseAddress.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xinshang/src/pages/order.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/orderHeader/orderHeader.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xinshang/src/components/public/search/searchCon/searchCon.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="93" column="77" selection-start-line="93" selection-start-column="77" selection-end-line="93" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -701,6 +633,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/goodsList/goodsList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinshang/src/components/public/search/searchCon/searchCon.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="93" column="77" selection-start-line="93" selection-start-column="77" selection-end-line="93" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/addAddress/addAddress.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/choseAddress/choseAddress.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinshang/src/pages/order.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
     </entry>
