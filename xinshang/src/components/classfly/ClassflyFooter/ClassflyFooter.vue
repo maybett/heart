@@ -4,7 +4,7 @@
       <i class="iconfont icon-fangzicopy f2"></i>
       <span >首页</span>
     </div>
-    <div class="footList f1">
+    <div class="footList f1" @click="goClassfly">
       <i class="iconfont icon-leimupinleifenleileibie--1 f2"></i>
       <span>分类</span>
     </div>
@@ -12,11 +12,11 @@
 
       <span class="f3">出售</span>
     </div>
-    <div class="footMsg f1">
+    <div class="footMsg f1" @click="goChat">
       <i class="iconfont icon-xinxi f2"></i>
       <span>消息</span>
     </div>
-    <div class="footMine f1">
+    <div class="footMine f1"  @click="goMe">
       <i class="iconfont icon-ziyuan1 f2"></i>
       <span>我的</span>
     </div>
@@ -38,6 +38,15 @@
       },
       goIndex(){
         this.$router.push({path:'/'})
+      },
+      goClassfly(){
+        this.$router.push({path:'/classfly'})
+      },
+      goMe(){
+        this.$router.push({path:'/me'})
+      },
+      goChat(){
+        this.$router.push({path:'/chat'})
       }
     }
   }
