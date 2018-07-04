@@ -27,8 +27,8 @@
       //创建实例之后
       created() {
         // 通过apis获取真实数据
-        // this.id = this.$route.query.id;
-        this.id = '2102987';
+        this.id = this.$route.query.id;
+        // this.id = '2102719';
         particularApis.getGoodsDetail(this.id,(data) => {
           // console.log(data);
           this.information = data;

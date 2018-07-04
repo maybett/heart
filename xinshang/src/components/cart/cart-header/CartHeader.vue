@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header_top">
-      <i class="iconfont icon-jiantou-copy-copy" @click="gotopart"></i>
+      <i class="iconfont icon-jiantou-copy-copy"  @click="$router.back(-1)"></i>
       <h2>购物车</h2>
     </div>
 
@@ -12,11 +12,6 @@
 <script>
     export default {
         name: "CartHeader",
-        methods:{
-          gotopart(){
-            this.$router.push({path:'./particulars'})
-          }
-        }
     }
 </script>
 
