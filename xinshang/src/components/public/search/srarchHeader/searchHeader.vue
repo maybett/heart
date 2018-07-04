@@ -1,6 +1,6 @@
 <template>
   <div class="searchHeader">
-    <i class="iconfont icon-jiantou-copy-copy backBtn"></i>
+    <i @click="goToBefore" class="iconfont icon-jiantou-copy-copy backBtn"></i>
     <input type="text" v-model="searchKey" @keydown="search" class="searchInput" placeholder="搜点什么呢">
     <p class="searchBtn" @click="keyCodeOver">搜索</p>
   </div>
@@ -15,6 +15,9 @@
       }
     },
     methods:{
+      goToBefore() {
+      	this.$router.go(-1);
+      },
       search(ev) {
         if(ev.keyCode == 13) {
           this.keyCodeOver();

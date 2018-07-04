@@ -17,16 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="order.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xinshang/src/pages/order.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="750">
               <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderHeader.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="orderHeader.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/orderHeader/orderHeader.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
@@ -232,6 +232,15 @@
               <item name="heart" type="462c0819:PsiDirectoryNode" />
               <item name="xinshang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="orderHeader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="heart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heart" type="462c0819:PsiDirectoryNode" />
+              <item name="xinshang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -309,12 +318,12 @@
       <workItem from="1530410171119" duration="19924000" />
       <workItem from="1530579907505" duration="11593000" />
       <workItem from="1530611074647" duration="3144000" />
-      <workItem from="1530689702664" duration="636000" />
+      <workItem from="1530689702664" duration="1264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75789000" />
+    <option name="totallyTimeSpent" value="76417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
@@ -615,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/orderHeader/orderHeader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/addAddress/addProv/addProv.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
@@ -666,8 +668,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xinshang/src/pages/order.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="750">
           <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xinshang/src/components/order/orderHeader/orderHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
