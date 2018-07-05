@@ -1,21 +1,19 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <!--<img src="./assets/logo.png">-->
+    <router-view/>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  components: {}
+  name: 'App'
 }
 </script>
 
 <style>
-#app{
-  width: 100%;
-  height: 100%;
+#app {
+  width:100%;
+  height:100%;
 }
-
 </style>
